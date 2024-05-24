@@ -46,6 +46,7 @@ Visit http://localhost:3000/api-docs in your browser to view the Swagger documen
 
 API Endpoints
 POST /api/auth/register: Register a new user.
+
 POST /api/auth/login: Login with email/password.
 POST /api/auth/login/google: Login with Google OAuth.
 POST /api/auth/login/facebook: Login with Facebook OAuth.
