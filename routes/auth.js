@@ -1,4 +1,3 @@
-// routes/auth.js
 const express = require('express');
 const passport = require('passport');
 const jwt = require('jsonwebtoken');
@@ -25,7 +24,7 @@ router.post('/login', async (req, res, next) => {
     })(req, res, next);
 });
 
-// Profile Routes
+
 router.get('/profile', passport.authenticate('jwt', { session: false }), async (req, res) => {
     res.json(req.user);
 });
